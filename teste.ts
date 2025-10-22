@@ -15,3 +15,24 @@ let fullName: string = 'Lorenzo Lopes';
 let age: number = 19;
 let sentence: string = `Olá, meu nome é ${fullName} e eu irei fazer ${age + 1}`;
 
+//any
+let v: any = true;
+v = "string";
+Math.round(v);
+
+//unknown 
+
+//undefined e null
+let y: undefined = undefined;
+let z: null = null;
+
+//Parametros e propriedades opcionais
+function greet(name?: string){
+    return `Hello, ${name || 'stranger'}`;
+}
+
+//Propridedade opcional em uma interface
+interface User{
+    name: string;
+    age?: number; // Mesma coisa que 'number | undefined'
+}
